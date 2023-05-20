@@ -1,0 +1,101 @@
+.footer{
+    padding: 2rem 0 0;
+    background: #05193D;
+    // .footer-links{
+    //     padding-left: 0;
+    //     justify-content: center;
+    //     display: flex;
+    //     align-items: center;
+    //     flex-wrap: wrap;
+    //     margin: 2rem 0;
+    //     li{
+    //         @media(max-width:420px){
+    //             margin-bottom: 1rem;
+    //         }
+    //         a{
+    //             margin: 1rem;
+    //             position: relative;
+    //             &:hover{
+    //                 color: #E96150;
+    //                 text-decoration: none;
+    //                 transition: all .5s;
+    //             }
+    //             &:after{
+    //                 position: absolute;
+    //                 content:'';
+    //                 height: 20px;
+    //                 width: 1px;
+    //                 background: #033C6C;
+    //                 right: -15px;
+    //                 top: 0;
+    //             }                
+    //         }
+    //         a.bar-hide{
+    //             &:after{
+    //                 display: none;
+    //             }
+    //         }
+    //     }
+    // }
+    h5{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 1.5rem;
+    }
+    ul{
+        padding-left: 0;
+        li{
+            list-style: none;
+            margin-bottom: 0.5rem;
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                color: #FFFFFF;
+                opacity: 0.75;
+                &:hover{
+                    color: #E96150;
+                    text-decoration: none;
+                    transition: all .5s;
+                    img{
+                        transform: rotate(45deg);
+                        transition: all .5s;
+                    }
+                }
+                @media(max-width: 991px){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // .soc-icons{
+    //     display: flex;
+    //     justify-content: center;
+    //     img{
+    //         margin: 0 0.5rem;
+    //         cursor:pointer;
+    //     }
+    // }
+    p{
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 500;;
+    }
+    .cmty{
+        ul{
+            display: flex;
+            padding-left: 0;
+            li{
+                list-style: none;
+                margin-right: 5px;
+            }
+        }
+    }
+    @media(max-width: 575px){
+        .logodv{
+            margin-bottom: 1.5rem;
+        }
+    }
+}

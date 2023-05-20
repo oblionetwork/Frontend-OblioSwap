@@ -1,0 +1,10 @@
+.access-container {
+  margin-top: 10rem !important;
+  background-color: gainsboro !important;
+  border: 5px solid gainsboro;
+  width: 50%;
+  margin-left: 25rem;
+  border-radius: 10px;
+  height: 300px;
+  padding-top: 5rem;
+}

@@ -1,0 +1,339 @@
+.homepage {
+  margin-top: 6rem;
+  overflow-x: hidden;
+  .banner {
+    background: url("/assets/images/banner.png") no-repeat bottom;
+    background-size: cover;
+    min-height: 558px;
+    // background-color: #fff;
+    border-radius: 10px;
+    // padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 1em;
+    mix-blend-mode: screen;
+    display: flex;
+    align-items: center;
+    @media(max-width:575px) {
+      min-height: 450px;
+    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: -1;
+    //   margin: -2px; /* !importanté */
+    //   border-radius: inherit; /* !importanté */
+    //   // background: linear-gradient(to bottom, #fff, #99aab9, #13316f);
+    // }
+    h1 {
+      font-weight: 600;
+      font-size: 52px;
+      color: #fff;
+      // padding: 2rem 0 0;
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+    P {
+      font-size: 14px;
+       color: #fff;
+       font-style: italic;
+      margin: 0 auto 1.5rem;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    .wal-btn-div {
+      display: flex;      
+      align-items: center;
+      flex-wrap: wrap;
+      .con-wal-btn {
+        background: #13316f;
+        border-radius: 10px;
+        width: 166px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        &:hover {
+          background: #e96150;
+          transition: all 0.5s;
+        }
+      }
+      .swap-btn {
+        background: #2776FF;
+        border-radius: 8px;
+        min-width: 114px;
+        min-height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        &:hover {
+          background: #e96150;
+          transition: all 0.5s;
+          color: #fff;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .trade-reg-div {
+    h3 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      color: #033c6c;
+      margin-bottom: 1.5rem;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: rgba(3, 60, 108, 0.6);
+      margin-bottom: 2rem;
+    }
+    .con-wal-btn {
+      background: #13316f;
+      border-radius: 10px;
+      width: 166px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      &:hover {
+        background: #e96150;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .user-cnt-div {
+    @media (max-width: 767px) {
+      padding-bottom: 0 !important;
+    }
+    .user-trade-cnt-div {
+      width: 250px;
+      background: #fff;
+      position: relative;
+      border: 1px solid #13316f;
+      border-radius: 20px;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      h5 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #033c6c;
+        margin: 1.5rem 0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(3, 60, 108, 0.6);
+      }
+    }
+    .user-trade-cnt-div.trade-cnt {
+      position: absolute;
+      top: 70%;
+      right: 20%;
+      z-index: 1;
+      @media (max-width: 991px) {
+        position: unset;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        right: 10%;
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 60px;
+      color: #333333;
+      margin-bottom: 1.5rem;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 40px;        
+      }
+      @media (max-width: 420px) {
+        font-size: 25px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: rgba(3, 60, 108, 0.6);
+      margin-bottom: 2rem;
+    }
+  }
+  .currency-div {
+    // margin-top: 7rem;
+    @media (max-width: 991px) {
+      margin-top: 0;
+      padding-top: 0 !important;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 60px;
+      color: #333333;
+      margin-bottom: 2.5rem;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      @media (max-width: 420px) {
+        font-size: 25px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: rgba(3, 60, 108, 0.6);
+      margin-bottom: 2rem;
+    }
+    .wal-btn-div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  .crypto-start {
+    background: url("/assets/images/start.png") no-repeat bottom;
+    background-size: cover;
+    min-height: 312px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h4 {
+      font-weight: 600;
+      font-size: 40px;
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      font-size: 14px;
+      text-align: center;
+      color: #ffffff;
+      margin: 2rem auto;
+      width: 50%;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    .con-wal-btn-white {
+      background: #ffffff;
+      border-radius: 10px;
+      width: 166px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      text-align: center;
+      color: #13316f;
+      display: block;
+      margin: auto;
+      &:hover {
+        background: #e96150;
+        transition: all 0.5s;
+        color: #fff;
+      }
+    }
+  }
+  .bg-white{
+    background: #fff;
+    .ccsld{
+      padding-top: 35px;
+      .slick-slide{
+        padding-right: 15px; 
+        @media(max-width: 480px) {
+          padding-right: 0;
+        }
+      }
+      .slick-dots{
+       bottom:-35px;
+        li button:before{
+          color: #A6C6FF;
+          opacity: 1;
+        }
+        li.slick-active button:before{
+          color:#0055E9;
+          font-size: 8px;
+        }
+      }      
+    }
+  }
+  .stginv{
+    background: #032257;
+    padding:75px 0 50px;
+    margin-top: -15px;
+    .stginvdt{
+      background-color: #023791 !important;
+      border-radius: 15px;
+      background: url('/assets/images/strinvimg.png') no-repeat;
+      background-size: contain;
+      min-height: 319px;
+      background-position: right;
+      h1{
+        font-weight: 600;
+        font-size: 42px;
+        color: #FFFFFF;
+        @media(max-width:420px){
+          font-size: 30px;
+        }
+      }
+      p{
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        width:50%;
+        opacity: 0.75;
+        @media(max-width: 767px){width: 100%;}
+      }
+      .dtbtn{
+        background: #2776FF;
+        border-radius: 8px;
+        min-width:153px;
+        min-height: 38px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        &:hover {
+          background: #e96150;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .exg {
+      h3{
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// chnages
+.oec-text {
+  font-weight: 600;
+  font-size: 22px;
+
+  color: #033c6c;
+}

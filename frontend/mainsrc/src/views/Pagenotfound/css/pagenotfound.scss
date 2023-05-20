@@ -1,0 +1,243 @@
+.homepage{
+    margin-top: 6rem;
+    .banner{
+        background: url('/assets/images/banner.png') no-repeat bottom;
+        background-size: contain;
+        min-height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        border: solid 2px transparent;
+        border-radius: 1em;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -2px; /* !importanté */
+            border-radius: inherit; /* !importanté */
+            background: linear-gradient(to bottom, #fff, #99AAB9, #13316F);
+          }
+        h1{
+            font-weight: 600;
+            font-size: 52px;
+            text-align: center;
+            color: #033C6C;
+            padding: 2rem 0 1rem;
+            @media(max-width: 767px){
+                font-size: 30px;
+            }
+        }
+        P{
+            font-size: 14px;
+            text-align: center;
+            width: 50%;
+            color: rgba(3, 60, 108, 0.6);
+            margin: 0 auto 2rem;
+            @media(max-width: 991px){
+                width: 100%;
+            }
+        }
+        .wal-btn-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .con-wal-btn{
+                background: #13316F;
+                border-radius: 10px;
+                width: 166px;
+                height: 50px;
+                font-weight: 600;
+                font-size: 15px;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 0.5rem;
+                &:hover{
+                    background: #E96150;
+                    transition: all .5s;
+                }
+            }
+            .swap-btn{
+                background: transparent;
+                border-radius: 10px;
+                border: 1px solid #13316F;
+                width: 166px;
+                height: 50px;
+                font-weight: 600;
+                font-size: 15px;
+                text-align: center;
+                color: #13316F;
+                margin-bottom: 0.5rem;
+                &:hover{
+                    background: #E96150;
+                    transition: all .5s;
+                    color: #fff;
+                    border-color: transparent
+                }
+            }
+        }
+    }
+    .trade-reg-div{
+        h3{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            color: #033C6C;
+            margin-bottom: 1.5rem;
+            @media(max-width:767px){    
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: rgba(3, 60, 108, 0.6);
+            margin-bottom: 2rem;
+        }
+        .con-wal-btn{
+            background: #13316F;
+            border-radius: 10px;
+            width: 166px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            &:hover{
+                background: #E96150;
+                transition: all .5s;
+            }
+        }
+    }
+    .user-cnt-div{
+        .user-trade-cnt-div{
+            width: 250px;
+            background: #fff;
+            position: relative;
+            border:1px solid #13316F;
+            border-radius: 20px;  
+            @media(max-width: 991px){
+                width:100%;
+            }          
+            h5{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: #033C6C;
+                margin: 1.5rem 0;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;            
+                color: rgba(3, 60, 108, 0.6);
+            }
+        }
+        .user-trade-cnt-div.trade-cnt{
+            position: absolute;
+            top: 70%;
+            right: 20%;
+            z-index: 1;
+            @media(max-width: 991px){
+                position: unset;
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                right: 10%
+            }
+        }
+        h3{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            color: #033C6C;
+            margin-bottom: 1.5rem;
+            @media(max-width:767px){    
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: rgba(3, 60, 108, 0.6);
+            margin-bottom: 2rem;
+        }
+    }
+    .currency-div{
+        margin-top: 7rem;
+        @media(max-width:991px){
+            margin-top: 0;
+            padding-top: 0 !important;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            color: #033C6C;
+            margin-bottom: 1.5rem;
+            @media(max-width:767px){    
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: rgba(3, 60, 108, 0.6);
+            margin-bottom: 2rem;
+        }
+        .wal-btn-div{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    .crypto-start{
+        background: url('/assets/images/start.png') no-repeat bottom;
+        background-size: cover;
+        min-height: 312px;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        p{
+            font-size: 14px;    
+            text-align: center;
+            color: #FFFFFF;
+            margin: 2rem auto;
+            width: 50%;
+            @media(max-width: 991px){
+                width: 100%;
+            }
+        }
+        .con-wal-btn-white{
+            background: #FFFFFF;
+            border-radius: 10px;
+            width: 166px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            color: #13316F;
+            display: block;
+            margin: auto;
+            &:hover{
+                background: #E96150;
+                transition: all .5s;
+                color: #fff;
+            }
+        }
+    }
+}

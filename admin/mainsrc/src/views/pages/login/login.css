@@ -1,0 +1,21 @@
+h1.login-heading,
+h2.login-heading {
+  font-size: 25px !important;
+}
+
+.text-right {
+  font-size: 8px !important;
+}
+
+.underline {
+  text-decoration: none !important;
+}
+
+.underline:hover {
+  font-weight: 800 !important;
+}
+.body-class {
+  background: #13316f !important;
+  color: white;
+  padding-top: 12rem;
+}

@@ -1,0 +1,109 @@
+// Flex
+.flex-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.token-wrapper {
+    padding-top: 120px;
+    background-image: url("/assets/images/coinbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    .token-wrap-bg {
+        background: rgba(0, 27, 73, 0.62);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        max-width: 940px;
+        width: 100%;
+        min-height: 562px;
+        padding: 20px;
+        margin: 0 auto;
+
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: clamp(24px, 5vw, 42px);
+            line-height: 59px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #E1E1E1;
+            max-width: 475px;
+            margin: 0 auto;
+        }
+
+        .chart-details {
+            @extend .flex-d;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            h2 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: clamp(20px, 5vw, 30px);
+                line-height: 45px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+
+                span {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: clamp(20px, 5vw, 30px);
+                    line-height: 45px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .chart-d {
+                @extend .flex-d;
+                justify-content: start;
+                margin: 25px 0;
+
+                h5 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: #CECECE;
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                    display: flex;
+                }
+
+                .Avail {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background: #7B4EFD;
+                    border-radius: 50px;
+                    margin-right: 15px;
+                }
+
+                .comp {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background: #FEB02B;
+                    border-radius: 50px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.chainSelectContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-left: 20px;
+
+  .currentLocal {
+    display: flex;
+    min-width: 100px;
+
+    padding: 0 13px;
+    height: 43px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    word-break: keep-all;
+
+    border: 1px solid #eeeeee;
+
+    position: relative;
+    background: #13316f;
+
+    p {
+      margin: 0;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      padding-right: 15px;
+      text-transform: capitalize;
+    }
+    .arrowUp {
+      transform-origin: center;
+      transform: rotate(180deg);
+      transition: width 0.2s, height 0.2s, transform 0.2s;
+    }
+    .arrowDown {
+      transform-origin: center;
+      transition: width 0.2s, height 0.2s, transform 0.2s;
+      transition-timing-function: linear;
+      transform: rotate(0deg);
+    }
+    .iconContainer {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    .selectArrow {
+      width: 8px;
+    }
+  }
+  .menulist {
+    left: 0;
+    top: calc(100% + 20px);
+    z-index: 100;
+
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .menuListItem {
+    min-width: 120px;
+    div {
+      height: 36px;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 100%;
+      font-style: normal;
+      font-size: 14px;
+      color: #333333;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+(this["webpackJsonp@coreui/coreui-free-react-admin-template"]=this["webpackJsonp@coreui/coreui-free-react-admin-template"]||[]).push([[67],{1337:function(e,t,c){"use strict";c.r(t);var n=c(1),r=(c(702),c(77)),i=c.n(r),a=(c(186),c(714),c(130)),o=c(18);t.default=function(){return Object(n.useEffect)((function(){i.a.get(a.a+"/api/stake/").then((function(e){})).catch((function(e){return console.error(e)}))}),[]),Object(o.jsx)("div",{className:"stakehistoy-container",children:Object(o.jsx)("h5",{children:"Stake History"})})}}}]);
+//# sourceMappingURL=67.1f98fea4.chunk.js.map
